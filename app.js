@@ -167,6 +167,14 @@ document.addEventListener("click", e => {
   else if (d.inc) { cart[d.inc]++; save(); renderCart(); }
   else if (d.dec) { if (--cart[d.dec] <= 0) delete cart[d.dec]; save(); renderCart(); }
 });
+document.querySelectorAll(".wa-link").forEach(a => {
+  if (SHOP.whatsapp) {
+    a.href = `https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent("Hi Suvu Creation 🎀")}`;
+    a.target = "_blank"; a.rel = "noopener";
+  } else {
+    a.onclick = e => { e.preventDefault(); toast("WhatsApp number coming soon 💚 For now, DM us on Instagram"); };
+  }
+});
 $("#openCart").onclick = () => openCart(true);
 $("#closeCart").onclick = () => openCart(false);
 $("#overlay").onclick = () => openCart(false);
