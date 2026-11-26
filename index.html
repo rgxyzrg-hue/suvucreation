@@ -3,178 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Suvu Creation · Handmade with love 🎀</title>
-<meta name="description" content="Suvu Creation – handmade crochet bouquets, Korean bags, scrunchies, hair clutchers, evil-eye hangings and gifts. Handmade with love.">
-<meta property="og:title" content="Suvu Creation · Handmade with love 🎀">
-<meta property="og:description" content="Handmade bouquets, bags, hair accessories and gifts.">
-<meta property="og:image" content="images/p03.jpg">
-<link rel="icon" href="images/dp.jpg">
+<title>Suvu Creation — Handmade with love, Hardoi</title>
+<meta name="description" content="Handmade crochet bouquets, bags, hair accessories and gifts by Suvu Creation. Visit the stall at New Bada Chauraha, Hardoi, or order online.">
+<meta property="og:title" content="Suvu Creation — Handmade with love">
+<meta property="og:description" content="Crochet bouquets, bags, hair accessories and gifts, made by hand in Hardoi.">
+<meta property="og:image" content="img/hero-1.jpg">
+<meta name="theme-color" content="#faf6f1">
+<link rel="icon" href="img/dp.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
-<div class="demo-bar">✨ Sample website preview made for <b>@suvucreation</b> · prices are placeholders</div>
+<div class="announce">
+  <div class="announce-track">
+    <span>Handmade in Hardoi</span><span>Stall open daily, 11 am – 6 pm</span><span>Custom orders now open</span><span>Pick up or home delivery</span>
+    <span>Handmade in Hardoi</span><span>Stall open daily, 11 am – 6 pm</span><span>Custom orders now open</span><span>Pick up or home delivery</span>
+  </div>
+</div>
 
-<header class="nav">
-  <a href="#top" class="brand">
-    <img src="images/dp.jpg" alt="Suvu Creation logo">
-    <span>Suvu Creation</span>
-  </a>
-  <nav class="links">
-    <a href="#shop">Shop</a>
-    <a href="#story">Our Story</a>
-    <a href="#visit">Visit Stall</a>
+<header class="header" id="header">
+  <nav class="nav-left">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+    <a href="#shop" data-filter="Bouquets">Bouquets</a>
+    <a href="#shop" data-filter="Hair">Hair</a>
+    <a href="#shop" data-filter="Bags">Bags</a>
+    <a href="#shop" data-filter="Gifts">Gifts</a>
   </nav>
-  <button class="cart-btn" id="openCart" aria-label="Open bag">
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-    <span class="count" id="cartCount">0</span>
-  </button>
+  <a href="#top" class="logo" aria-label="Suvu Creation home">
+    <span class="logo-main">Suvu</span>
+    <span class="logo-sub">Creation</span>
+  </a>
+  <nav class="nav-right">
+    <a href="#story" class="hide-sm">Our Story</a>
+    <a href="#visit" class="hide-sm">Visit</a>
+    <button class="bag-btn" id="openCart" aria-label="Open bag">Bag (<span id="cartCount">0</span>)</button>
+  </nav>
 </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#shop" data-filter="All">Shop all</a>
+  <a href="#shop" data-filter="Bouquets">Bouquets</a>
+  <a href="#shop" data-filter="Hair">Hair</a>
+  <a href="#shop" data-filter="Bags">Bags</a>
+  <a href="#shop" data-filter="Gifts">Gifts</a>
+  <a href="#story">Our story</a>
+  <a href="#visit">Visit the stall</a>
+</div>
 
 <main id="top">
 
 <!-- HERO -->
 <section class="hero">
-  <div class="sparkles" aria-hidden="true"></div>
-  <div class="hero-text">
-    <p class="kicker">🎀 Handmade with love</p>
-    <h1><span class="script">Hey Beautiful</span> ❣️<br>little things, made by hand<br>just for you.</h1>
-    <p class="lead">Crochet bouquets, Korean-style bags, scrunchies, hair clutchers, evil-eye charms and gift hampers. Every piece is made by Suvu, one at a time.</p>
-    <div class="hero-cta">
-      <a href="#shop" class="btn primary">Shop the collection</a>
-      <a href="https://www.instagram.com/suvucreation/" target="_blank" rel="noopener" class="btn ghost">See us on Instagram</a>
-    </div>
-    <div class="trust">
-      <div><b>1,300+</b><span>happy followers</span></div>
-      <div><b>100%</b><span>handmade</span></div>
-      <div><b>23+</b><span>days at the stall</span></div>
-    </div>
+  <figure class="hero-img hero-left"><img src="img/hero-1.jpg" alt="Handmade bouquet by Suvu Creation"></figure>
+  <figure class="hero-img hero-right"><img src="img/hero-2.jpg" alt="Crochet sunflowers by Suvu Creation"></figure>
+  <div class="hero-copy">
+    <p class="eyebrow light">The Handmade Edit</p>
+    <h1>Made by hand,<br><em>made to be loved.</em></h1>
+    <a href="#shop" class="link-btn light">Shop the collection</a>
   </div>
-  <div class="hero-art">
-    <div class="polaroid p1"><img src="images/p03.jpg" alt="Handmade flower bouquet"><span>pretty bouquet 💐</span></div>
-    <div class="polaroid p2"><img src="images/p05.jpg" alt="Crochet sunflowers"><span>sunflower love 🌻</span></div>
-    <div class="dp-badge"><img src="images/dp.jpg" alt="Suvu Creation"><span>@suvucreation</span></div>
-    <div class="bow">🎀</div>
-  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div><span class="v-num">01</span><p>Every piece made by hand, one at a time</p></div>
+  <div><span class="v-num">02</span><p>Custom colours and names on request</p></div>
+  <div><span class="v-num">03</span><p>Pick up at the stall or get it delivered</p></div>
 </section>
 
 <!-- CATEGORIES -->
-<section class="cats" id="shop">
-  <h2 class="title"><span class="script">Shop</span> the collection</h2>
-  <p class="sub">Tap a category, add your favourites to the bag 💗</p>
-  <div class="chips" id="chips"></div>
+<section class="cats">
+  <div class="section-head">
+    <p class="eyebrow">Shop by category</p>
+    <h2>Little things, <em>beautifully made</em></h2>
+  </div>
+  <div class="cat-row">
+    <a href="#shop" class="cat" data-filter="Bouquets"><div class="arch"><img src="img/bouquet.jpg" alt="" loading="lazy"></div><span>Bouquets</span></a>
+    <a href="#shop" class="cat" data-filter="Hair"><div class="arch"><img src="img/scrunchie.jpg" alt="" loading="lazy"></div><span>Hair</span></a>
+    <a href="#shop" class="cat" data-filter="Bags"><div class="arch"><img src="img/kittybag.jpg" alt="" loading="lazy"></div><span>Bags</span></a>
+    <a href="#shop" class="cat" data-filter="Gifts"><div class="arch"><img src="img/dome.jpg" alt="" loading="lazy"></div><span>Gifts</span></a>
+  </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="grid-wrap">
+<!-- SHOP -->
+<section class="shop" id="shop">
+  <div class="shop-head">
+    <div>
+      <p class="eyebrow">The collection</p>
+      <h2>Shop <em>all pieces</em></h2>
+    </div>
+    <div class="tabs" id="tabs"></div>
+  </div>
   <div class="grid" id="grid"></div>
 </section>
 
-<!-- CUSTOM ORDER -->
-<section class="custom">
-  <div class="custom-img"><img src="images/p07.jpg" alt="Custom name bow"></div>
-  <div class="custom-text">
-    <p class="kicker">✨ Made just for you</p>
-    <h2>Custom orders for <span class="script">every occasion</span></h2>
-    <p>Wedding bows with names, birthday bouquets, gift hampers in your colours. Tell Suvu what you have in mind and she will make it by hand.</p>
-    <ul class="ticks">
-      <li>Name bows for shaadi & haldi</li>
-      <li>Bouquets in your favourite colours</li>
-      <li>Gift hampers & return gifts</li>
+<!-- EDITORIAL: CUSTOM -->
+<section class="editorial">
+  <figure class="ed-img"><img src="img/namebow.jpg" alt="Custom name bow" loading="lazy"></figure>
+  <div class="ed-copy">
+    <p class="eyebrow">Made for your moment</p>
+    <h2>Custom pieces for <em>every celebration</em></h2>
+    <p>Name bows for a shaadi, a bouquet in her favourite colours, return gifts for a birthday. Tell Suvu what you have in mind and she will make it by hand, just for you.</p>
+    <ul class="ed-list">
+      <li><span>Wedding &amp; haldi</span>Name bows, hair pieces</li>
+      <li><span>Birthdays</span>Bouquets, dome gifts</li>
+      <li><span>Return gifts</span>Scrunchie and charm sets</li>
     </ul>
-    <a href="https://ig.me/m/suvucreation" target="_blank" rel="noopener" class="btn primary">Ask for a custom piece</a>
+    <a href="https://ig.me/m/suvucreation" target="_blank" rel="noopener" class="btn">Request a custom piece</a>
   </div>
 </section>
 
 <!-- STORY -->
 <section class="story" id="story">
-  <h2 class="title"><span class="script">Day by day</span> 🎀</h2>
-  <p class="sub">Suvu started her small business at a street stall. Here is the journey so far.</p>
-  <div class="reel-strip" id="reels"></div>
+  <div class="story-copy">
+    <p class="eyebrow">Our story</p>
+    <h2>A small stall, <em>a lot of love</em></h2>
+    <p>Suvu Creation began with a table on a busy Hardoi street and a basket of handmade flowers. Day by day, the stall grew: crochet sunflowers, Korean-style bags, satin scrunchies, evil-eye charms, and gifts that people kept coming back for.</p>
+    <p>Everything is still made the same way, by hand, with care, in small batches.</p>
+    <div class="signature">
+      <img src="img/dp.jpg" alt="Suvu Creation logo">
+      <div><span class="sig">Suvu</span><small>Founder, Suvu Creation</small></div>
+    </div>
+  </div>
+  <figure class="story-img"><img src="img/suvu.jpg" alt="Suvu at her stall in Hardoi" loading="lazy"></figure>
 </section>
 
 <!-- VISIT -->
 <section class="visit" id="visit">
-  <div class="visit-card">
-    <img src="images/p01.jpg" alt="Suvu at her stall">
-    <div>
-      <p class="kicker">📍 Come say hi</p>
-      <h2>Visit the <span class="script">Suvu Creation</span> stall</h2>
-      <p class="time">📍 <b>New Bada Chauraha, near Arya Kanya College, Hardoi</b></p>
-      <p class="time">🕚 Open daily · <b>11 am – 6 pm</b></p>
-      <p>See every piece in person, pick your colours and take it home the same day. Can't come? Order here and we'll arrange delivery.</p>
-      <div class="hero-cta">
-        <a href="https://www.google.com/maps/search/?api=1&query=Arya+Kanya+College+Bada+Chauraha+Hardoi" target="_blank" rel="noopener" class="btn primary">Get directions</a>
-        <a href="#" class="btn ghost wa-link">WhatsApp us</a>
-        <a href="https://ig.me/m/suvucreation" target="_blank" rel="noopener" class="btn ghost">Instagram DM</a>
-      </div>
-    </div>
+  <figure class="visit-img"><img src="img/stall.jpg" alt="The Suvu Creation stall" loading="lazy"></figure>
+  <div class="visit-copy">
+    <p class="eyebrow">Visit the stall</p>
+    <h2>Come see it <em>in person</em></h2>
+    <dl>
+      <dt>Address</dt><dd>New Bada Chauraha, near Arya Kanya College, Hardoi, Uttar Pradesh</dd>
+      <dt>Hours</dt><dd>Open daily, 11 am – 6 pm</dd>
+      <dt>Contact</dt><dd><a href="#" class="wa-link">WhatsApp</a> · <a href="https://ig.me/m/suvucreation" target="_blank" rel="noopener">Instagram</a></dd>
+    </dl>
+    <a href="https://www.google.com/maps/search/?api=1&query=Arya+Kanya+College+Bada+Chauraha+Hardoi" target="_blank" rel="noopener" class="btn outline">Get directions</a>
   </div>
 </section>
 
-<!-- FEEDBACK -->
-<section class="love">
-  <h2 class="title"><span class="script">Love notes</span> ❣️</h2>
-  <div class="notes">
-    <blockquote>“The crochet sunflower looks even prettier in real life!” <cite>– sample review</cite></blockquote>
-    <blockquote>“Got a name bow for my masi's shaadi, everyone asked where it's from.” <cite>– sample review</cite></blockquote>
-    <blockquote>“Cutest scrunchies in the market, soft and pretty.” <cite>– sample review</cite></blockquote>
+<!-- INSTAGRAM -->
+<section class="insta">
+  <div class="section-head">
+    <p class="eyebrow">Follow along</p>
+    <h2><a href="https://www.instagram.com/suvucreation/" target="_blank" rel="noopener">@suvucreation</a></h2>
   </div>
+  <div class="insta-grid" id="insta"></div>
 </section>
 
 </main>
 
-<footer>
-  <div class="foot-brand"><img src="images/dp.jpg" alt=""><span class="script">Suvu Creation</span></div>
-  <p>Hey Beautiful ❣️ Handmade with love 🫰🏻</p>
-  <p>📍 New Bada Chauraha, near Arya Kanya College, Hardoi · 11 am – 6 pm</p>
-  <p><a href="https://www.instagram.com/suvucreation/" target="_blank" rel="noopener">Instagram @suvucreation</a> · <a href="#" class="wa-link">WhatsApp</a></p>
-  <p class="small">Sample website · built as a preview</p>
+<footer class="footer">
+  <div class="f-top">
+    <div class="f-brand">
+      <span class="logo-main">Suvu</span><span class="logo-sub">Creation</span>
+      <p>Handmade with love in Hardoi.</p>
+    </div>
+    <div class="f-col">
+      <h4>Shop</h4>
+      <a href="#shop" data-filter="Bouquets">Bouquets</a>
+      <a href="#shop" data-filter="Hair">Hair</a>
+      <a href="#shop" data-filter="Bags">Bags</a>
+      <a href="#shop" data-filter="Gifts">Gifts</a>
+    </div>
+    <div class="f-col">
+      <h4>Visit</h4>
+      <p>New Bada Chauraha,<br>near Arya Kanya College,<br>Hardoi</p>
+      <p>Daily, 11 am – 6 pm</p>
+    </div>
+    <div class="f-col">
+      <h4>Contact</h4>
+      <a href="#" class="wa-link">WhatsApp</a>
+      <a href="https://www.instagram.com/suvucreation/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2026 Suvu Creation</span>
+    <span>Sample website preview · prices are placeholders</span>
+  </div>
 </footer>
 
-<!-- CART DRAWER -->
+<!-- BAG -->
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer" aria-label="Your bag">
   <div class="drawer-head">
-    <h3>Your bag 🛍️</h3>
-    <button id="closeCart" aria-label="Close">✕</button>
+    <h3>Your bag</h3>
+    <button id="closeCart" class="x" aria-label="Close"></button>
   </div>
   <div class="drawer-items" id="cartItems"></div>
   <div class="drawer-foot">
-    <div class="total"><span>Total</span><b id="cartTotal">₹0</b></div>
-    <label class="field">Your name<input id="custName" placeholder="e.g. Priya"></label>
-    <label class="field">Pickup or delivery
-      <select id="custMode"><option>Pick up from the stall</option><option>Home delivery</option></select>
+    <div class="total"><span>Subtotal</span><b id="cartTotal">₹0</b></div>
+    <label class="field"><span>Your name</span><input id="custName" placeholder="Full name"></label>
+    <label class="field"><span>Delivery</span>
+      <select id="custMode"><option>Pick up from the stall</option><option>Home delivery in Hardoi</option></select>
     </label>
-    <button class="btn primary full" id="checkout">Place order 💌</button>
-    <p class="note">Your order goes to Suvu as a message. She confirms price, colour and delivery, then you pay (UPI / cash).</p>
+    <button class="btn full" id="checkout">Place order</button>
+    <p class="note">Your order is sent to Suvu as a message. She confirms colour, price and delivery, then you pay by UPI or cash.</p>
   </div>
 </aside>
 
-<!-- PRODUCT MODAL -->
+<!-- QUICK VIEW -->
 <div class="modal" id="modal" aria-hidden="true">
   <div class="modal-card">
-    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-    <img id="mImg" alt="">
-    <div class="modal-body">
-      <p class="tag" id="mCat"></p>
+    <button class="x modal-x" id="modalClose" aria-label="Close"></button>
+    <figure class="m-img"><img id="mImg" alt=""></figure>
+    <div class="m-body">
+      <p class="eyebrow" id="mCat"></p>
       <h3 id="mName"></h3>
-      <p class="price" id="mPrice"></p>
-      <p id="mDesc"></p>
-      <button class="btn primary full" id="mAdd">Add to bag</button>
+      <p class="m-price" id="mPrice"></p>
+      <p class="m-desc" id="mDesc"></p>
+      <button class="btn full" id="mAdd">Add to bag</button>
+      <ul class="m-notes">
+        <li>Handmade, so each piece is slightly unique</li>
+        <li>Custom colours on request</li>
+        <li>Pick up in Hardoi or home delivery</li>
+      </ul>
     </div>
   </div>
 </div>
 
 <a href="#" class="wa-float wa-link" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.8-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.8-1.9-6 0-5.9 4.9-10.6 11-10.6s11 4.8 11 10.6-4.9 10.9-11 10.9zm6-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.8-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.900-3.8-1.9-6 0-5.9 4.9-10.6 11-10.6s11 4.8 11 10.6-4.9 10.9-11 10.9zm6-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.600-1.6-1-.9-1.600-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
 </a>
 
 <div class="toast" id="toast"></div>
 
-<script src="app.js"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
